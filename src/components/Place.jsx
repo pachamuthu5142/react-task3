@@ -9,7 +9,7 @@ const Place = () => {
         {   
             heading:"01.Chennai",
             imgSrc: require('../Home/Chennai.jpeg'),
-            url:"01.Chennai",
+            url:"chennai",
             title: '"The Detroit Of India"',
             description1:"Formerly known as Madras, Chennai is the capital city of the state of Tamil Nadu, in the southern part of India. Located on the Coromandel coast of Bay of Bengal, Chennai is as dynamic as it is immersed in tradition. This 'capital of the south', is one among the four metropolitan siblings of India, having a rich cultural history which it perfectly balances with its metropolis lifestyle",
             description2:"Amid its chaos of traffic and sweltering humid climate, Chennai is worth visiting for its temples steeped in south-Indian culture, British-era museums and monuments, culinary delights and Marina Beach (Second largest urban beach in the world). Chennai's skyline is famous for its towering skyscrapers, but the heart of Chennai has an old-world charm to it that refuses to be overshadowed."   ,
@@ -39,6 +39,7 @@ const Place = () => {
         },
         {
             heading:`02.Rameshwaram`,
+            url:"rameshwaram",
             imgSrc: require('../Home/Rameshwaran.jpeg'),
             title: '"The Bridge on the Indian Ocean"',
             description1:`Rameshwaram is located on a beautiful island in the South Indian state of Tamil Nadu. It is separated by a small Pamban channel from Sri Lanka. According to Hindu mythology, this is the place where Lord Rama created a bridge across the sea to Sri Lanka.`,
@@ -69,6 +70,7 @@ const Place = () => {
         },
         {
             heading:`03.Kodaikanal`,
+            url:"kodaikanal",
             imgSrc: require('../Home/Kodaikanal.jpeg'),
             title: '"The Princess of Hill Stations"',
             description1:`Kodaikanal Tourism Located in the state of Tamil Nadu, Kodaikanal is one of the most famous honeymoon destinations in India. A Lakeside resort town of Tamil Nadu, Kodaikanal has a beautiful climate, mist-covered manicured cliffs and waterfall that come together to create the ideal setting for a perfect getaway. Kodaikanal means 'the gift of the forests'.`,
@@ -99,6 +101,7 @@ const Place = () => {
         },
         {
             heading:`04.Ooty`,
+            url:"ooty",
             imgSrc: require('../Home/Ooty.jpeg'),
             title: '"Queen of the Nilgiris"',
             description1:`Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen of the hills is a picturesque getaway.`,
@@ -129,6 +132,7 @@ const Place = () => {
         },
         {
             heading:`05.Kanyakumari`,
+            url:"kanyakumari",
             imgSrc: require('../Home/Kanyakumari.jpeg'),
             title: `"Cape Comorin or The Lands End"`
             ,description1:`Kanyakumari Tourism Bordered by the three seas - Arabian, Indian and the Bay of Bengal, Kanyakumari is the southernmost tip of the Indian Peninsula. A small coastal town in the state of Tamil Nadu, Kanyakumari was earlier known as Cape Comorin.`,
@@ -158,7 +162,8 @@ const Place = () => {
             ]
         },
         {
-            heading:`06.Kumbakanom`,
+            heading:`06.Kumbakanam`,
+            url:"kumbakanam",
             imgSrc: require('../Home/Kumbakonam.jpeg'),
             title: '"The Cambridge of India"',
             description1:`Kumbakonam Tourism Sandwiched between two great rivers of southern India, Cauvery and Arsala, Kumbakonam is a gorgeous temple town in the heart of the Thanjavur district of Tamil Nadu. The town is a place for the lovers of history and those seeking to understand India's cultural roots and Hinduism.`,
@@ -189,6 +194,7 @@ const Place = () => {
         },
         {
             heading:`07.Madurai`,
+            url:"madurai",
             imgSrc: require('../Home/Madurai.jpeg'),
             title: '"The Lotus City"',
             description1:`Madurai Tourism Madurai, the cultural capital of Tamil Nadu, is one of the oldest continuously inhabited cities of India. Ruled by Pandya kings for the longest time in its history, it is called as the 'Lotus City' as it was planned and built in the shape of a lotus. Madurai is known for Meenakshi Amman Temple, dedicated to the goddess Meenakshi with a sanctum for her consort, Sundareshwarar.`,
@@ -219,6 +225,7 @@ const Place = () => {
         },
         {
             heading:"08.Yercaud",
+            url:"yercaud",
             imgSrc: require('../Home/Yarcaud.jpeg'),
             title: '"The Land of Seven Forests."',
             description1:`Yercaud Tourism Nestled in the Shivaroy Hills of Tamil Nadu, Yercaud is a hill station in the Eastern Ghats steeped in abundant greenery. Commonly called 'Ooty of the Poor', this region has a history dating back to the time of the British. Located at an altitude of 4970 feet, Yercaud is known for its vast expanses of coffee plantations and great weather.`,
@@ -249,6 +256,7 @@ const Place = () => {
         },
         {
             heading:'09.Theni',
+            url:"theni",
             imgSrc: require('../Home/Theni.jpeg'),
             title: '"A little hamlet in Tamil Nadu"',
             description1:`Theni Tourism Dotted by luscious patches of greenery and beautiful waterfalls, Theni is a little hamlet on the Western Ghats. The topography of Theni mainly consists of hills and ranges. It has plenty of rivers and dams and is an abode to 27 forests hence filled with unparalleled greenery.`,
@@ -279,6 +287,7 @@ const Place = () => {
         },
         {
             heading:'10.Hogenakkal',
+            url:"hogenakkal",
             imgSrc: require('../Home/Hogenakkal.jpeg'),
             title: `"The one that will take your breath away"`,
             description1:"Hogenakkal Tourism Hogenakkal is a waterfall located in Dharmapuri district of Tamil Nadu where the Kaveri river splits into multiple streams of waterfalls. Located at a distance of 180 km from Bangalore, Hogenakkal has water throughout the year. The carbonite rocks, the coracle (basket boat) rides, freshwater fish, oil massages by locals make it a perfect one day trip or a weekend getaway from Bangalore.",
@@ -316,7 +325,7 @@ return (
         {containerData.map((data, index) => (
             <div className="container" key={index}>
                 <div className="row">
-                    <h3>{data.heading}</h3>
+                    <h3 id={data.url}>{data.heading}</h3>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                         <img src={data.imgSrc} alt="img" className="img-fluid" />
                     </div>
